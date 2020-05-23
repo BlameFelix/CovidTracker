@@ -15,10 +15,6 @@
 	<name>CovidTracker</name>
 	<description>Tracker for Covid-19 cases in Germany</description>
 
-	<properties>
-		<java.version>11</java.version>
-	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
