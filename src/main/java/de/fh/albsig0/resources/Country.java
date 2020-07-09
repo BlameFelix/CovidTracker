@@ -1,6 +1,8 @@
-package de.fh.albsig0.entity;
+package de.fh.albsig0.resources;
 
-public class Country {
+import org.springframework.web.servlet.ModelAndView;
+
+public class Country extends ModelAndView {
     private String name;
     private int confirmed;
     private int deaths;
