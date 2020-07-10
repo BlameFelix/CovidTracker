@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>CovidTracker</name>
-	<description>Tracker for Covid-19 cases in Germany</description>
+	<description>Tracker for Covid-19 cases</description>
 
 	<dependencies>
 		<dependency>
@@ -79,12 +79,13 @@
 			<version>3.1.1</version>
 		</dependency>
 
-<!--		&lt;!&ndash; https://mvnrepository.com/artifact/com.google.code.findbugs/findbugs &ndash;&gt;-->
-<!--		<dependency>-->
-<!--			<groupId>com.google.code.findbugs</groupId>-->
-<!--			<artifactId>findbugs</artifactId>-->
-<!--			<version>3.0.1</version>-->
-<!--		</dependency>-->
+		<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/findbugs-maven-plugin -->
+		<dependency>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>findbugs-maven-plugin</artifactId>
+			<version>3.0.5</version>
+		</dependency>
+
 
 
 	</dependencies>
@@ -92,15 +93,21 @@
 	<reporting>
 		<plugins>
 			<plugin>
-				<groupId>com.google.code.findbugs</groupId>
-				<artifactId>findbugs</artifactId>
-				<version>3.0.1</version>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+				<version>3.0.5</version>
 			</plugin>
 		</plugins>
 	</reporting>
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.7.1</version>
+			</plugin>
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -115,6 +122,7 @@
 					<consoleOutput>true</consoleOutput>
 					<failsOnError>false</failsOnError>
 					<linkXRef>false</linkXRef>
+					<suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
 				</configuration>
 				<executions>
 					<execution>

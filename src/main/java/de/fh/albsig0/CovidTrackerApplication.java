@@ -5,6 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class CovidTrackerApplication {
+	private CovidTrackerApplication() {
+
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(CovidTrackerApplication.class, args);

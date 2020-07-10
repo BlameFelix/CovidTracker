@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suppressions PUBLIC
+        "-//Checkstyle//DTD SuppressionFilter Configuration 1.0//EN"
+        "https://checkstyle.org/dtds/suppressions_1_0.dtd">
+
+<suppressions>
+    <suppress checks="JavadocPackage"
+              files="[\\/]de.fh.albsig0[\\/].*\.java$"
+              lines="0-9999"/>
+    <suppress checks="DesignForExtension"
+              files="[\\/]de.fh.albsig0[\\/].*\.java$"
+              lines="0-9999"/>
+    <suppress checks="FinalParameters"
+              files="[\\/]de.fh.albsig0[\\/].*\.java$"
+              lines="0-9999"/>
+    <suppress checks="FileTabCharacter"
+              files="[\\/]de.fh.albsig0[\\/].*\.java$"
+              lines="0-9999"/>
+    <suppress checks="MissingJavadocMethod"
+              files="[\\/]de.fh.albsig0[\\/].*\.java$"
+              lines="0-9999"/>
+    <suppress checks="LineLength"
+              files="[\\/]de.fh.albsig0[\\/].*\.java$"
+              lines="0-9999"/>
+    <suppress checks="JavadocVariable"
+              files="[\\/]de.fh.albsig0[\\/].*\.java$"
+              lines="0-9999"/>
+    <suppress checks="FinalClass"
+              files="[\\/]de.fh.albsig0[\\/].*\.java$"
+              lines="0-9999"/>
+    <suppress checks="HiddenField"
+              files="[\\/]de.fh.albsig0[\\/].*\.java$"
+              lines="0-9999"/>
+
+</suppressions>
+
