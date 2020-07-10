@@ -1,8 +1,6 @@
 package de.fh.albsig0.resources;
 
-import org.springframework.web.servlet.ModelAndView;
-
-public class CovidExceptions extends ModelAndView {
+public class CovidExceptions extends CovidParent {
     private String errorMessage;
 
     public String getErrorMessage() {
