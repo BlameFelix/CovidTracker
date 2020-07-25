@@ -7,6 +7,7 @@ import de.fh.albsig0.resources.CovidExceptions;
 import de.fh.albsig0.resources.CovidParent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,7 @@ import java.io.IOException;
 
 @RestController
 public class CovidController {
+
     protected static final Logger JSON_LOGGER = LogManager.getLogger();
 
     @Inject

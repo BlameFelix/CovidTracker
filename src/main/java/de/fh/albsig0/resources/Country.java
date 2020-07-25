@@ -18,6 +18,7 @@ public class Country implements CovidParent {
                 + '}';
     }
 
+
     public Country(String name, int confirmed, int deaths, int recovered, int active) {
         this.name = name;
         this.confirmed = confirmed;
