@@ -1,6 +1,6 @@
 package de.fh.albsig0.resources;
 
-public class CovidExceptions implements CovidParent {
+public class CovidExceptions extends CovidParent {
     private String errorMessage;
 
     public String getErrorMessage() {

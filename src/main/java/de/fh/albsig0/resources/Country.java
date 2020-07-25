@@ -1,23 +1,11 @@
 package de.fh.albsig0.resources;
 
-public class Country implements CovidParent {
+public class Country extends CovidParent {
     private String name;
     private int confirmed;
     private int deaths;
     private int recovered;
     private int active;
-
-    @Override
-    public String toString() {
-        return "Country{"
-                + "name='" + name + '\''
-                + ", confirmed=" + confirmed
-                + ", deaths=" + deaths
-                + ", recovered=" + recovered
-                + ", active=" + active
-                + '}';
-    }
-
 
     public Country(String name, int confirmed, int deaths, int recovered, int active) {
         this.name = name;
