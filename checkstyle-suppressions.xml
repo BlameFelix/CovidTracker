@@ -32,6 +32,12 @@
     <suppress checks="HiddenField"
               files="[\\/]de.fh.albsig0[\\/].*\.java$"
               lines="0-9999"/>
+    <suppress checks="VisibilityModifier"
+              files="[\\/]de.fh.albsig0[\\/].*\.java$"
+              lines="0-9999"/>
+    <suppress checks="HideUtilityClassConstructor"
+              files="[\\/]de.fh.albsig0[\\/].*\.java$"
+              lines="0-9999"/>
 
 </suppressions>
 
