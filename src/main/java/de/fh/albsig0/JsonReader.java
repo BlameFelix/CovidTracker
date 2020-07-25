@@ -11,10 +11,7 @@ import java.nio.charset.Charset;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public final class JsonReader {
-    private JsonReader() {
-
-    }
+public class JsonReader {
 
     private static String readAll(Reader rd) throws IOException {
         StringBuilder sb = new StringBuilder();
